@@ -60,7 +60,7 @@ export default function App() {
           <a
             href="https://github.com/Miss-Louisa88"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             : Louise Adera
           </a>
@@ -68,7 +68,7 @@ export default function App() {
           <a
             href="https://github.com/Miss-Louisa88/my-react-weather-app"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             open-sourced on GitHub
           </a>
@@ -76,7 +76,7 @@ export default function App() {
           <a
             href="https://louisereactjsweather.netlify.app/"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             hosted on Netlify
           </a>
