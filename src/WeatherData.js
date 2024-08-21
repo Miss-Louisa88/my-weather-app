@@ -4,8 +4,8 @@ import Weather from "./Weather";
 import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
 
-export default function App() {
-  const [city, setCity] = useState("");
+export default function App(props) {
+  const [city, setCity] = useState(props.defaultCity);
   const [weatherInfo, setWeatherInfo] = useState({ ready: false });
 
   function handleSubmit(event) {
