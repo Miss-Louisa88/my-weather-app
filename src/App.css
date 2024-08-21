@@ -1,38 +1,144 @@
+body {
+  background-color: aliceblue;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  color: rgb(41, 41, 185);
+}
+
 .App {
-  text-align: center;
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(0, 0, 0, 0.15) 100%
+    ),
+    radial-gradient(
+        at top center,
+        rgba(255, 255, 255, 0.4) 0%,
+        rgba(0, 0, 0, 0.4) 120%
+      )
+      #989898;
+  max-width: 700px;
+  margin: 45px auto;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+  border-radius: 16px;
+  padding: 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  border-bottom: 1px solid rgb(109, 112, 104);
+  padding: 0 0 30px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.SearchInput {
+  background-color: aliceblue;
+  border: none;
+  border-radius: 6px;
+  width: 80%;
+  font-size: 16px;
+  padding: 15px 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.SearchButton {
+  background: rgb(88, 102, 114);
+  padding: 15px 30px;
+  border: none;
+  font-size: 16px;
+  margin-left: 5px;
+  border-radius: 6px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.SearchButton:hover {
+  background: rgb(77, 64, 64);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+main {
+  padding: 30px 0;
+}
+
+.WeatherData {
+  display: flex;
+  justify-content: space-between;
+}
+
+.WeatherCity {
+  margin: 0;
+  font-size: 38px;
+  line-height: 48px;
+}
+
+.WeatherDetails {
+  font-size: 16px;
+  color: black;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.WeatherDetails strong {
+  color: #960e37;
+}
+
+.WeatherAppTemperatureContainer {
+  display: flex;
+}
+
+.WeatherIcon {
+  width: 88px;
+  height: 88px;
+}
+
+.WeatherTemperature {
+  font-size: 88px;
+  line-height: 88px;
+  font-weight: bold;
+}
+
+.WeatherUnit {
+  margin-top: 8px;
+  font-size: 24px;
+}
+
+.WeatherForecast {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.WeatherDate {
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.ForecastIcon {
+  width: 88px;
+  height: 88px;
+  display: block;
+  margin: 0 auto;
+}
+.ForecastTemperatures {
+  text-align: center;
+  color: rgba(68, 23, 23, 0.986);
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.ForecastTemperature {
+  padding: 0 10px;
+}
+
+footer {
+  border-top: 1px solid rgb(109, 112, 104);
+  padding: 30px 0 0 0;
+  text-align: center;
+  font-size: 14px;
+  color: rgba(14, 6, 6, 0.6);
+  font-weight: bold;
+}
+.Farenheight {
+  text-decoration: none;
 }
