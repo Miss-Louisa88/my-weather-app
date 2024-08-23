@@ -6,7 +6,7 @@ export default function Weather(props) {
   return (
     <div className="ForecastDay">
       <ul>
-        {days?.map(function (day, index) {
+        {days.map(function (day, index) {
           return (
             <li key={index}>
               <div className="ForecastDate"> {day}</div>
