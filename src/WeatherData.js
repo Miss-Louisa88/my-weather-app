@@ -36,7 +36,7 @@ export default function App(props) {
     console.log(apiUrl);
     axios.get(apiUrl).then(handleResponse);
   }
-  if ((weatherInfo.ready = true)) {
+  if (weatherInfo.ready) {
     return (
       <div className="App">
         <header>
