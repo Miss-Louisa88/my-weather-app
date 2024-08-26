@@ -122,13 +122,17 @@ main {
 .ForecastTemperatures {
   text-align: center;
   color: rgba(68, 23, 23, 0.986);
-  margin-top: 10px;
+  margin-top: -5px;
   display: flex;
   justify-content: center;
 }
 
-.ForecastTemperature {
-  padding: 0 10px;
+.MaxForecastTemperature {
+  padding: 0 5px;
+  margin-right: -0px;
+}
+.MinForecastTemperature {
+  margin-right: 50px;
 }
 
 footer {
