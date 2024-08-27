@@ -59,13 +59,13 @@ export default function App(props) {
         </main>
 
         <footer>
-          Coded by
+          Coded by:
           <a
             href="https://github.com/Miss-Louisa88"
             target="_blank"
             rel="noopener noreferrer"
           >
-            : Louise Adera
+            Louise Adera
           </a>
           , is
           <a

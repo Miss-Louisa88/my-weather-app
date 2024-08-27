@@ -1,5 +1,9 @@
 body {
-  background-color: aliceblue;
+  background: linear-gradient(
+    69.5deg,
+    rgb(40, 48, 68) 2.3%,
+    rgb(1, 179, 201) 97.6%
+  );
   font-family: "Roboto", sans-serif;
 }
 
@@ -9,16 +13,13 @@ a {
 
 .App {
   background: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0.15) 0%,
-      rgba(0, 0, 0, 0.15) 100%
-    ),
-    radial-gradient(
-        at top center,
-        rgba(255, 255, 255, 0.4) 0%,
-        rgba(0, 0, 0, 0.4) 120%
-      )
-      #989898;
+    179.7deg,
+    rgb(248, 126, 126) -0.5%,
+    rgb(251, 206, 143) 35.3%,
+    rgb(184, 252, 233) 67.2%,
+    rgb(118, 162, 229) 92.3%
+  );
+
   max-width: 700px;
   margin: 45px auto;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
@@ -27,7 +28,7 @@ a {
 }
 
 header {
-  border-bottom: 1px solid rgb(109, 112, 104);
+  border-bottom: 1px solid rgb(228, 179, 110);
   padding: 0 0 30px 0;
 }
 
@@ -41,7 +42,7 @@ header {
 }
 
 .SearchButton {
-  background: rgb(88, 102, 114);
+  background: rgb(77, 64, 64);
   padding: 15px 30px;
   border: none;
   font-size: 16px;
@@ -50,7 +51,11 @@ header {
   color: white;
 }
 .SearchButton:hover {
-  background: rgb(77, 64, 64);
+  background: linear-gradient(
+    180.3deg,
+    rgb(214, 224, 255) 37.2%,
+    rgb(254, 168, 168) 137.3%
+  );
 }
 
 main {
@@ -136,12 +141,21 @@ main {
 }
 
 footer {
-  border-top: 1px solid rgb(109, 112, 104);
+  border-top: 1px solid rgb(147, 177, 223);
   padding: 30px 0 0 0;
   text-align: center;
   font-size: 14px;
   color: rgba(14, 6, 6, 0.6);
   font-weight: bold;
+}
+footer a {
+  color: lightgreen;
+  font-weight: bold;
+  text-decoration: wavy;
+  margin-left: 5px;
+}
+footer a:hover {
+  color: aliceblue;
 }
 .Farenheight {
   text-decoration: none;
