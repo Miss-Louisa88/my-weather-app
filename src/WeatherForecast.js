@@ -1,45 +1,49 @@
-import React from "react";
+import React, { useState } from "react";
 import "./WeatherForecast.css";
-import WeatherIcon from "./WeatherIcon";
+
 import axios from "axios";
+import DailyForecast from "./DailyForecast";
 
 export default function Weather(props) {
-  /// make an api call
+  let [forecast, setForecast] = useState(null);
+  let [loaded, setLoaded] = useState(false);
+
+  ///get the response
   function showForecast(response) {
     console.log(response.data.daily);
+    setForecast(response.data.daily);
+    setLoaded(true);
   }
-  let apiKey = "6782253072f7d90462731a624097fc54";
-  let longitude = props.cordinate.lon;
-  let latitude = props.cordinate.lat;
-  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&unit=metric`;
-  axios.get(apiUrl).then(showForecast);
-  ///get the data
 
   ///inject the data to the screen on respective variables
 
-  let days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri"];
+  function load() {
+    let apiKey = "6782253072f7d90462731a624097fc54";
+    let longitude = props.cordinate.lon;
+    let latitude = props.cordinate.lat;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&unit=metric`;
+    axios.get(apiUrl).then(showForecast);
+  }
 
-  return (
+  if (loaded) {
+    return;
     <div className="ForecastDay">
-      <ul>
-        {days.map(function (day, index) {
-          return (
-            <li key={index}>
-              <div className="ForecastDate"> {day}</div>
-              <WeatherIcon code={props.cordinate.icon} size={45} />
-
-              <div className="ForecastTemperatures">
-                <div className="MaxForecastTemperature">
-                  <strong>{Math.round(props.cordinate)}º</strong>
-                </div>
-                <div className="MinForecastTemperature">
-                  <div>23</div>
-                </div>
+      <div className="row">
+        {forecast.map(function (dailyForecast, index) {
+          if (index < 5) {
+            return (
+              <div className="col ForecastDate" key={index}>
+                <DailyForecast data={dailyForecast} />
               </div>
-            </li>
-          );
+            );
+          } else {
+            return null;
+          }
         })}
-      </ul>
-    </div>
-  );
+      </div>{" "}
+    </div>;
+  } else {
+    load();
+    return null;
+  }
 }
