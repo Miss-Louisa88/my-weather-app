@@ -1,8 +1,8 @@
 body {
   background: linear-gradient(
-    69.5deg,
-    rgb(40, 48, 68) 2.3%,
-    rgb(1, 179, 201) 97.6%
+    178.6deg,
+    rgb(201, 219, 230) 3.3%,
+    rgb(214, 216, 219) 109.6%
   );
   font-family: "Roboto", sans-serif;
 }
@@ -12,23 +12,18 @@ a {
 }
 
 .App {
-  background: linear-gradient(
-    179.7deg,
-    rgb(248, 126, 126) -0.5%,
-    rgb(251, 206, 143) 35.3%,
-    rgb(184, 252, 233) 67.2%,
-    rgb(118, 162, 229) 92.3%
-  );
+  background: linear-gradient(to top, #3b41c5 0%, #a984bb 49%, #ffc8a9 100%);
 
   max-width: 700px;
   margin: 45px auto;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
   border-radius: 16px;
   padding: 30px;
+  box-shadow: 5px;
 }
 
 header {
-  border-bottom: 1px solid rgb(228, 179, 110);
+  border-bottom: 1px solid rgb(184, 134, 171);
   padding: 0 0 30px 0;
 }
 
@@ -42,7 +37,7 @@ header {
 }
 
 .SearchButton {
-  background: rgb(77, 64, 64);
+  background: rgb(194, 120, 117);
   padding: 15px 30px;
   border: none;
   font-size: 16px;
@@ -53,8 +48,8 @@ header {
 .SearchButton:hover {
   background: linear-gradient(
     180.3deg,
-    rgb(214, 224, 255) 37.2%,
-    rgb(254, 168, 168) 137.3%
+    rgb(71, 77, 95) 37.2%,
+    rgb(185, 86, 86) 137.3%
   );
 }
 
@@ -141,7 +136,7 @@ main {
 }
 
 footer {
-  border-top: 1px solid rgb(147, 177, 223);
+  border-top: 1px solid rgb(122, 87, 219);
   padding: 30px 0 0 0;
   text-align: center;
   font-size: 14px;
