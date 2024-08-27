@@ -59,7 +59,7 @@ export default function App(props) {
         </main>
 
         <footer>
-          This project was coded by a beautiful girl called
+          This project was coded by
           <a
             href="https://github.com/Miss-Louisa88"
             target="_blank"
