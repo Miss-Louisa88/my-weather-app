@@ -13,7 +13,6 @@ a {
 
 .App {
   background: linear-gradient(to top, #6b71e4 0%, #8f6ea0 49%, #f0cab4 100%);
-
   max-width: 700px;
   margin: 45px auto;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
@@ -120,7 +119,6 @@ main {
   margin: 0 auto;
 }
 .ForecastTemperatures {
-  text-align: center;
   color: rgba(68, 23, 23, 0.986);
   margin-top: -5px;
   display: flex;
@@ -128,11 +126,18 @@ main {
 }
 
 .MaxForecastTemperature {
+  margin-left: -20px;
   padding: 0 5px;
-  margin-right: -0px;
 }
 .MinForecastTemperature {
   margin-right: 50px;
+  margin-left: 1px;
+}
+.ForecastDate {
+  border-radius: 8px;
+  margin-left: 3px;
+  box-shadow: 0 1px 10px rgb(175, 145, 174);
+  border-width: 1px;
 }
 
 footer {
