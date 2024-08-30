@@ -77,7 +77,7 @@ export default function App(props) {
           </a>
           , and
           <a
-            href="https://louisereactjsweather.netlify.app/"
+            href="https://louisereact.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
           >
